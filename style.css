@@ -1,0 +1,99 @@
+*{
+     font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  box-sizing: border-box;
+  /* scroll-behavior: smooth; */
+ /* overflow-x: hidden;    */
+} 
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030; /* Make sure it stays on top of other content */
+}
+
+
+  .content{
+    background-image: url(./assests/main.jpg);
+    background-size: cover;
+    max-height: auto;
+  
+   /* background-repeat: no-repeat;  */
+  }
+.para{
+  background-image: url( ./assests/back1.avif);
+
+ 
+  } 
+
+  .hexagon-grid {
+    display: grid; 
+     grid-template-columns: repeat(3, 1fr);  
+    gap: 20px;
+     justify-items: center; 
+    /* margin: 10px auto;   */
+    /* max-width: 600px;  */
+}
+
+.hexagon {
+    /* width: 150px;
+    height: 130px; */
+    background-color: #3498db;
+    position: relative;
+   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); 
+    border: 5px solid black; 
+   /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px; */
+}
+
+.hexagon img {
+    /* width: 100%;
+    height: 100%; */
+    object-fit: cover;
+     /* clip-path: inherit;  */
+}
+.hexagon :hover{
+  transform: scale(1.2) rotate(50deg);
+
+  /* width: 100%;
+  height: 100%;  */
+}
+
+.form input,
+.form textarea {
+  background: transparent;
+  width: 90%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.807);
+  padding: 1em 0;
+  margin-bottom: 1.2em;
+  color: rgba(199, 198, 198, 0.861);
+}
+
+.d {
+  display: grid;
+  grid-template-columns: 10% 78%;
+  align-items: center;
+  gap: 1%;
+  padding: 0.5em 0;
+ border: black; 
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; 
+}
+
+ .footer a {
+  color: #c8c9b2; /* Desired color for the links */
+  text-decoration: none;
+} 
+
+
+
+.footer a:hover {
+  color: #79e91e; /* Color on hover */
+}
+.footer .credit span {
+  color: rgb(62, 181, 62);
+ 
+}
+
